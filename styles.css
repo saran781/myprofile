@@ -91,9 +91,46 @@ span{
 }
 
 
-
-
 *{
     margin: 0;
     padding: 0;
+}
+
+
+@media screen and (max-width: 400px) {
+    
+    .name {
+        font-size: 3rem;
+        text-align: center;
+        margin-left: 0;
+        margin-left: 20%;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .two{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .myImage, .two {
+        width: 100%;
+    }
+
+    .projects, .social, .resume {
+        width: 70%;
+        height: 50%;
+        margin: 20px 0;
+    }
+
+    .projects img, .social img, .resume img{
+        margin-left: 17%;
+    }
+
+    body{
+        background-color: rgb(63, 49, 8);
+    }
 }
