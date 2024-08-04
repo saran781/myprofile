@@ -8,59 +8,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social handles</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(202, 98, 17);
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        span {
+            font-family: "Lilita One", sans-serif;
+            font-weight: 400;
+            font-size: 60px;
+            font-style: normal;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content div {
+            height: 200px;
+            width: 200px;
+            background-color: rgb(2, 56, 95);
+            margin: 20px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            height: 100px;
+            width: 100px;
+            border-radius: 25px;
+        }
+
+        @media screen and (max-width: 400px) {
+            span {
+                font-size: 30px;
+            }
+
+            .content div {
+                height: 150px;
+                width: 150px;
+                margin: 10px;
+            }
+
+            img {
+                height: 75px;
+                width: 75px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="nav"><span>Social Handles</span></div>
     <div class="content">
-        <div class="github"><a href="https://github.com/saranb565"><img src="github.png" alt=""></a></div>
-        <div class="linkedin"><a href="https://www.linkedin.com/in/saran-b-319127249/"><img src="linkedin.png" alt=""></a></div>
-        <div class="gmail"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=recipient@saranb565@gmail.com"><img src="gmail.jpg" alt=""></a></div>
-        <div class="resume"><a href="myResume.pdf"><img src="resume.jpg" alt=""></a></div>
-        
+        <div class="github"><a href="https://github.com/saranb565"><img src="github.png" alt="GitHub"></a></div>
+        <div class="linkedin"><a href="https://www.linkedin.com/in/saran-b-319127249/"><img src="linkedin.png" alt="LinkedIn"></a></div>
+        <div class="gmail"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=recipient@saranb565@gmail.com"><img src="gmail.jpg" alt="Gmail"></a></div>
+        <div class="resume"><a href="myResume.pdf"><img src="resume.jpg" alt="Resume"></a></div>
     </div>
 </body>
-
-<style>
-    *{
-        margin: 20px;
-        padding: 0;
-    }
-    body{
-        background-color: rgb(202, 98, 17);
-    }
-    .content{
-        display: flex;
-        flex-direction: row; 
-        margin-left: 110px; 
-        margin-top: 50px;   
-    }
-
-    img{
-        height: 100px;
-        width: 100px;
-        margin-top: 45px;
-        margin-left: 35px;
-        border-radius: 25px;
-    }
-
-    .github, .linkedin, .gmail, .resume{
-        height: 200px;
-        width: 200px;
-        background-color: rgb(2, 56, 95);
-        margin: 30px;
-        border-radius: 20px;
-    }
-
-    span{
-        font-family: "Lilita One", sans-serif;
-        font-weight: 400;
-        font-size: 60px;
-        font-style: normal;
-        margin-left: 34%;
-        
-    }
-
-    
-</style>
-
 </html>
